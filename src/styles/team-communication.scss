@@ -1,0 +1,38 @@
+$grid-gap: 20px;
+$container-width: 100%;
+$mobile-breakpoint: 576px;
+
+.team-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $grid-gap;
+  width: $container-width;
+  text-align: center;
+  margin-top: 10vh;
+
+  @media (min-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+}
+
+.team-header-container {
+  width: 100%;
+
+  @media (min-width: $mobile-breakpoint) {
+    width: auto;
+    margin-right: $grid-gap;
+  }
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
